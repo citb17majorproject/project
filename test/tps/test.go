@@ -88,7 +88,7 @@ func TestPCAddPolicy(c chan int, n int) {
 
 func GetPolicyReq(i, r, g, AP int) string {
 	now := time.Now().Unix()
-	policyStr := fmt.Sprintf(`{"AS":{"userId":"%s","role":"u%d","group":"g%d"},"AO":{"deviceId":"%s","MAC":"%s"},"AP":%d,"AE":{"createdTime":%d,"endTime":%d,"allowedIP":"*.*.*.*"}}`, GetUserID(i), r, g, GetDeviceID(i), RandomMac(), AP, now, now+100000)
+	policyStr := fmt.Sprintf(`{"AS":{"userId":"%s","role":"u%d","group":"g%d"},"AO":{"deviceId":"%s","MAC":"%s"},"AP":%d,"AE":{"startTime":%d,"endTime":%d,"allowedIP":"*.*.*.*"}}`, GetUserID(i), r, g, GetDeviceID(i), RandomMac(), AP, now, now+100000)
 	return policyStr
 }
 
