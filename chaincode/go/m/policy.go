@@ -26,7 +26,7 @@ type AO struct {
 }
 
 type AE struct {
-	StartTime int64  `json:"StartTime"`
+	StartTime int64  `json:"startTime"`
 	EndTime     int64  `json:"endTime"`
 	AllowedIP   string `json:"allowedIP"`
 }
