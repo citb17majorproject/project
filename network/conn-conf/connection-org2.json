@@ -1,0 +1,60 @@
+{
+    "name": "first-network-org2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org2",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "Org2": {
+            "mspid": "Org2MSP",
+            "peers": [
+                "peer0.org2.fabric-iot.edu",
+                "peer1.org2.fabric-iot.edu"
+            ],
+            "certificateAuthorities": [
+                "ca.org2.fabric-iot.edu"
+            ]
+        }
+    },
+    "peers": {
+        "peer0.org2.fabric-iot.edu": {
+            "url": "grpcs://localhost:9051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICYzCCAgqgAwIBAgIRAMNY9n9tJPBpE3itPk5r8ggwCgYIKoZIzj0EAwIwfDEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xHDAaBgNVBAoTE29yZzIuZmFicmljLWlvdC5lZHUxIjAgBgNVBAMT\nGXRsc2NhLm9yZzIuZmFicmljLWlvdC5lZHUwHhcNMjEwNzI2MDkzNDAwWhcNMzEw\nNzI0MDkzNDAwWjB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEW\nMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEcMBoGA1UEChMTb3JnMi5mYWJyaWMtaW90\nLmVkdTEiMCAGA1UEAxMZdGxzY2Eub3JnMi5mYWJyaWMtaW90LmVkdTBZMBMGByqG\nSM49AgEGCCqGSM49AwEHA0IABO0g2sdp2hlowWzT5naLzC97mCc41GhW72flpLoA\n1fM2oU8qTaDQvckd9KYM2SO0MVsB/wF03weMbLrrJEPdtSCjbTBrMA4GA1UdDwEB\n/wQEAwIBpjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/\nBAUwAwEB/zApBgNVHQ4EIgQgzxYU7szpkozkxK5rLAGL8IPSLxii8TgJHAPhg5MB\nGw0wCgYIKoZIzj0EAwIDRwAwRAIgeBcdXCTn2zWJDnjdNX9yyrfkAAQR3YRLtlwq\na+CsMz0CIFXNf4G8JhSZSNCL7Og8oe60eLBSvRWr1vfyvIUK4Hjv\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.org2.fabric-iot.edu",
+                "hostnameOverride": "peer0.org2.fabric-iot.edu"
+            }
+        },
+        "peer1.org2.fabric-iot.edu": {
+            "url": "grpcs://localhost:10051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICYzCCAgqgAwIBAgIRAMNY9n9tJPBpE3itPk5r8ggwCgYIKoZIzj0EAwIwfDEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xHDAaBgNVBAoTE29yZzIuZmFicmljLWlvdC5lZHUxIjAgBgNVBAMT\nGXRsc2NhLm9yZzIuZmFicmljLWlvdC5lZHUwHhcNMjEwNzI2MDkzNDAwWhcNMzEw\nNzI0MDkzNDAwWjB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEW\nMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEcMBoGA1UEChMTb3JnMi5mYWJyaWMtaW90\nLmVkdTEiMCAGA1UEAxMZdGxzY2Eub3JnMi5mYWJyaWMtaW90LmVkdTBZMBMGByqG\nSM49AgEGCCqGSM49AwEHA0IABO0g2sdp2hlowWzT5naLzC97mCc41GhW72flpLoA\n1fM2oU8qTaDQvckd9KYM2SO0MVsB/wF03weMbLrrJEPdtSCjbTBrMA4GA1UdDwEB\n/wQEAwIBpjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/\nBAUwAwEB/zApBgNVHQ4EIgQgzxYU7szpkozkxK5rLAGL8IPSLxii8TgJHAPhg5MB\nGw0wCgYIKoZIzj0EAwIDRwAwRAIgeBcdXCTn2zWJDnjdNX9yyrfkAAQR3YRLtlwq\na+CsMz0CIFXNf4G8JhSZSNCL7Og8oe60eLBSvRWr1vfyvIUK4Hjv\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer1.org2.fabric-iot.edu",
+                "hostnameOverride": "peer1.org2.fabric-iot.edu"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "ca.org2.fabric-iot.edu": {
+            "url": "https://localhost:8054",
+            "caName": "ca-org2",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICXDCCAgOgAwIBAgIQE+h/4y242LdkTZZhsIzF+zAKBggqhkjOPQQDAjB5MQsw\nCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy\nYW5jaXNjbzEcMBoGA1UEChMTb3JnMi5mYWJyaWMtaW90LmVkdTEfMB0GA1UEAxMW\nY2Eub3JnMi5mYWJyaWMtaW90LmVkdTAeFw0yMTA3MjYwOTM0MDBaFw0zMTA3MjQw\nOTM0MDBaMHkxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYD\nVQQHEw1TYW4gRnJhbmNpc2NvMRwwGgYDVQQKExNvcmcyLmZhYnJpYy1pb3QuZWR1\nMR8wHQYDVQQDExZjYS5vcmcyLmZhYnJpYy1pb3QuZWR1MFkwEwYHKoZIzj0CAQYI\nKoZIzj0DAQcDQgAEm4pttiIOyxvcBhK/uUiEFln09jJ2VfFU9Z2vO7xnaPamAc5x\nYViMIyxRtCX76cf0AHOJlCjZ71WGFCrJe6cmuKNtMGswDgYDVR0PAQH/BAQDAgGm\nMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAPBgNVHRMBAf8EBTADAQH/\nMCkGA1UdDgQiBCCYGK0dcc9BwACNOqtqFxCnVmwgmnYapZp/SOg8snS4DDAKBggq\nhkjOPQQDAgNHADBEAiBJD22tNeROVp5Jo0w0jzb8FM2TA+ThjynJbMyIj/i3ogIg\nNc99iyvX60mss6X1oKARGtOjM8QrI9UKwj0cWCtGIwo=\n-----END CERTIFICATE-----\n"
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}
